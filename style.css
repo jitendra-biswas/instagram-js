@@ -124,8 +124,8 @@ nav ul a{
     position: absolute;
     width: 100%;
     height: 100%;
-   background-size: cover;
-   background-position: center;
+    background-size: cover;
+    background-position: center;
     display: none;
     border-radius: 15px;
 
@@ -144,7 +144,7 @@ nav ul a{
 
     .insta{
         width:99vw;
-        height: calc(100vh - 80px);
+        height: 85vh;
         border: 1px solid black;
         border-radius : 15px;
         position: relative;
@@ -152,5 +152,19 @@ nav ul a{
     }
 
 
+    .insta .story{
+        padding: 10px;
+    }
+    
+    .insta .story .stories{
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
+    }
+
+    .insta .story .stories img{
+        width: 75px;
+        
+    }
 }
 
