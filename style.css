@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+nav{
+    height: 70px;
+    border-bottom: 2px solid rgb(33, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+  
+}
+
+nav ul{
+    display: flex;
+    font-size: 20px;
+    list-style-type: none;
+    gap:50px;
+    
+}
+
+nav ul a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+
+.side-nav{
+    background-color: rgba(24, 24, 23, 0.464);
+    width: 200px;
+    height: calc(100vh - 70px);
+    padding-left: 70px;
+    float: right;
+    display: none;
+    backdrop-filter: blur(5px);
+}
+
+.side-nav ul{
+    list-style: none;
+    display: flex;
+    gap:50px;
+    flex-direction: column;
+    margin-top: 20px;
+    
+    
+}
+.side-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.instagram{
+    width: 100vw;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.instagram h1 i{
+    font-size: 35px;
+    background: -webkit-linear-gradient(90deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 40%, rgba(98,40,215,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.insta{
+    width:300px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius : 15px;
+    position: relative;
+    background-color: #ededed;
+}
+
+.insta .story{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1.5px solid #252424;
+    padding: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+   
+}
+
+.insta .story::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+.insta .story .stories{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid red;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 7px;
+  
+}
+
+
+.insta .story .stories img{
+    width: 50px;
+    
+}
+
+.full-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   background-size: cover;
+   background-position: center;
+    display: none;
+    border-radius: 15px;
+
+}
+
+@media (max-width:600px) {
+
+    nav .bar a{
+        display: none;
+        
+    }
+
+    nav{
+        width:100vw;
+    }
+
+    .insta{
+        width:99vw;
+        height: calc(100vh - 80px);
+        border: 1px solid black;
+        border-radius : 15px;
+        position: relative;
+        background-color: #ededed;
+    }
+
+
+}
+
